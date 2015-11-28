@@ -1,6 +1,5 @@
 (function ( $ ) {
  
-
     $.fn.menuIcon = function() {
     	this.append("<div class='f'></div><div class='s'></div><div class='t'></div>");
     	this.addClass("menu back");
