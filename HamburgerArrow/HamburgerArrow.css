@@ -1,0 +1,45 @@
+.hamburger-arrow {
+  position: fixed;
+  top: 100px;
+  left: 600px;
+  height: 28px;
+  width: 48px;
+  background: black;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0s;
+  transition-timing-function: ease-in-out;
+  transform: rotateZ(0deg); }
+  .hamburger-arrow .f, .hamburger-arrow .s, .hamburger-arrow .t {
+    height: 4px;
+    width: 48px;
+    background: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out; }
+  .hamburger-arrow .f {
+    margin-bottom: 8px; }
+  .hamburger-arrow .t {
+    margin-top: 8px; }
+  .hamburger-arrow.arrow {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(180deg); }
+    .hamburger-arrow.arrow .f {
+      transform: translate(12px, 5px) rotate(45deg);
+      width: 24.23529px; }
+    .hamburger-arrow.arrow .s {
+      width: 32px; }
+    .hamburger-arrow.arrow .t {
+      transform: translate(12px, -5px) rotate(-45deg);
+      width: 24.23529px; }
+  .hamburger-arrow.hamburger {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(360deg); }
+    .hamburger-arrow.hamburger .f {
+      transform: rotate(0deg); }
+    .hamburger-arrow.hamburger .t {
+      transform: rotate(0deg); }
