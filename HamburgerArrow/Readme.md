@@ -19,14 +19,14 @@ Add libraries, you need jquery for this to work
 Create div for holding the icon
 
 ```bash
-<div class="arrow-icon"></div>
+<div class="hamburger-icon"></div>
 ```
 
 Initiate the script
 
 ```bash
 <script>
-	$('.arrow-icon').hamburgerarrow();
+	$('.hamburger-icon').hamburgerarrow();
 </script>
 ```
 </content>
