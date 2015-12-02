@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 ##Hamburger arrow
 Simple hamburger to arrow transitioning icon, for material design
 or whatever you need it for
@@ -16,6 +16,6 @@ or whatever you need it for
 		$('.arrow-icon').menuIcon();
 </script>
 ```
-]]></content>
-  <tabTrigger>readme</tabTrigger>
+</content>
+
 </snippet>
