@@ -5,19 +5,30 @@
 	<title>Some shit</title>
 
 
-	<link rel="stylesheet" href="some.css">
+	<link rel="stylesheet" href="menuIcon.css">
+	<link rel="stylesheet" href="xtext.css">
 	<link rel="stylesheet" href="body.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="some.js"></script>
+	<script src="xtext.js"></script>
 </head>
 <body>
-	
+	<!--<div class="max-scroll"></div>-->
 	<div class="arrow-icon"></div>
+
+	<div class="x-text" x-content="Hello world!">
+		<div class="x-container">
+			<div class="x-line x-line1"></div>
+			<div class="x-content"></div>
+			<div class="x-line x-line2"></div>
+		</div>
+	</div>
 
 
 	<script>
 		$('.arrow-icon').menuIcon();
+		$('.x-text').xtext();
 	</script>
 </body>
 </html>
