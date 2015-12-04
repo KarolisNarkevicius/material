@@ -1,14 +1,14 @@
 (function ( $ ) {
  
-    $.fn.menuIcon = function( options ) {
+    $.fn.hamburgerarrow = function( options ) {
     	
 
     	var settings = $.extend({
-    		active: false,						// boolean for checking if arrow is active or not
-    		hamburgerClass:"hamburger", 		// class added when transitioning to hamburger
-    		arrowClass:"arrow", 				// class added when arrow is active
-    		contrainerClass:"hamburger-arrow", 	// icons default container class
-    		
+    		active:                 false,						// boolean for checking if arrow is active or not
+    		hamburgerClass:         "hamburger", 		// class added when transitioning to hamburger
+    		arrowClass:             "arrow", 				// class added when arrow is active
+    		contrainerClass:        "hamburger-arrow", 	// icons default container class    	
+            rotate:                 "left"	
         }, options );
 
     	// inside divs for hamburger lines
@@ -19,12 +19,19 @@
 
     	this.on("click",function() {
     		if (settings.active) {
-				$(this).removeClass(settings.arrowClass).addClass(settings.hamburgerClass);
+				$(this)
+                    .removeClass(settings.arrowClass)
+                    .removeClass("rotate"+settings.rotate)
+                    .addClass(settings.hamburgerClass);
+
 				settings.active = false;
 			} else {
 				// if is preventing animation reversing when going arrow -> hamburger
 				if (!$(this).hasClass(settings.hamburgerClass)) { 
-					$(this).removeClass(settings.hamburgerClass).addClass(settings.arrowClass);
+					$(this)
+                        .removeClass(settings.hamburgerClass)
+                        .addClass(settings.arrowClass)
+                        .addClass("rotate"+settings.rotate);
 					settings.active = true;
 				}
 

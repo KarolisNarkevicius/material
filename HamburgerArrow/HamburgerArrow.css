@@ -21,19 +21,34 @@
     margin-bottom: 8px; }
   .hamburger-arrow .t {
     margin-top: 8px; }
-  .hamburger-arrow.arrow {
+  .hamburger-arrow.rotateleft {
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transform: rotateZ(180deg); }
-    .hamburger-arrow.arrow .f {
-      transform: translate(12px, 5px) rotate(45deg);
-      width: 24.23529px; }
-    .hamburger-arrow.arrow .s {
-      width: 32px; }
-    .hamburger-arrow.arrow .t {
-      transform: translate(12px, -5px) rotate(-45deg);
-      width: 24.23529px; }
+  .hamburger-arrow.rotatebottom {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(90deg); }
+  .hamburger-arrow.rotatetop {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(270deg); }
+  .hamburger-arrow.rotateright {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: rotateZ(0deg); }
+  .hamburger-arrow.arrow .f {
+    transform: translate(12px, 5px) rotate(45deg);
+    width: 24.23529px; }
+  .hamburger-arrow.arrow .s {
+    width: 32px; }
+  .hamburger-arrow.arrow .t {
+    transform: translate(12px, -5px) rotate(-45deg);
+    width: 24.23529px; }
   .hamburger-arrow.hamburger {
     transition-property: all;
     transition-duration: 0.3s;

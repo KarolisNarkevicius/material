@@ -33,13 +33,39 @@ $turn-time:0.3s;
 	.t {
 		margin-top:$line-margin;
 	}
-	
-	&.arrow {
+
+
+
+	&.rotateleft {
 
 		transition-property: all;
 	    transition-duration: $turn-time;
 	    transition-timing-function: ease-in-out;
 		transform:rotateZ(180deg);
+	}
+	&.rotatebottom {
+
+		transition-property: all;
+	    transition-duration: $turn-time;
+	    transition-timing-function: ease-in-out;
+		transform:rotateZ(90deg);
+	}
+	&.rotatetop {
+
+		transition-property: all;
+	    transition-duration: $turn-time;
+	    transition-timing-function: ease-in-out;
+		transform:rotateZ(270deg);
+	}
+	&.rotateright {
+
+		transition-property: all;
+	    transition-duration: $turn-time;
+	    transition-timing-function: ease-in-out;
+		transform:rotateZ(0deg);
+	}
+	
+	&.arrow {
 		.f {
 			transform:translate(12px,5px) rotate(45deg);
 			width:($line-width/1.7)-4;
