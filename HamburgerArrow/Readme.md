@@ -35,6 +35,7 @@ Initiate the script
 You can add top, bottom, left or right parameters for the arrows turn
 ```bash
 <script>
+	# Default is left
 	$('.hamburger-idon').hamburgerarrow({rotate:"top"});
 </script>
 ```
