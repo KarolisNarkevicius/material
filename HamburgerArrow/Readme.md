@@ -29,6 +29,16 @@ Initiate the script
 	$('.hamburger-icon').hamburgerarrow();
 </script>
 ```
+
+##Parameters
+
+You can add top, bottom, left or right parameters for the arrows turn
+```bash
+<script>
+	$('.hamburger-idon').hamburgerarrow({rotae:"top"});
+</script>
+```
+
 </content>
 
 </snippet>
